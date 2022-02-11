@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="title-section">
+            <div class="logo">
+                <a class="clickable">
+                    <img src="/images/logo.png" height="40" width="40">
+                </a>
+            </div>
+            <div class="menu-item f-right">
+                <form id="searchForm" autocomplete="off">
+                    <input type="input" placeholder="Kripto Para Ara" name="searchBar" id='searchBar' spellcheck="false" />
+                    <i class="fa fa-search" id="fa-search" style="color: white; font-size: 15px;"></i>
+                </form>
+            </div>
+        </div>
+
+        <div class="tableFixHead center">
+            <table id="table" class="center">
+                <thead id="thead">
+                    <tr id="thead">
+                        <th class="th-items" colspan="1">
+                        </th>
+                        <th class="th-items">
+                            <div class="f-right">24S %</div>
+                        </th>
+                        <th class="th-items">
+                            <div class="f-right">Fiyat</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/fontawesome.js"></script>
+</body>
+
+</html>
