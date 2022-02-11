@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*genel*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #192636;
+}
+
+.f-right {
+    float: right;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand {
+    color: white;
+    font-weight: 800;
+}
+
+
+/*top*/
+
+.main {
+    width: 420px;
+}
+
+.title-section {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #192636;
+}
+
+.logo {
+    display: inline-block;
+    padding: 11px
+}
+
+.menu-item {
+    font-weight: 800;
+    font-size: 1em;
+    color: rgb(214, 212, 212);
+    padding: 14px 15px 14px 15px;
+}
+
+
+/*SearchBar*/
+
+#searchBar {
+    background-color: transparent;
+    border: 0;
+    width: 145px;
+    height: 30px;
+    outline: 0;
+    border-radius: 3px;
+    padding: 10px;
+    transition: 0.8s ease;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+#searchForm i {
+    position: absolute;
+    right: 13px;
+    z-index: -1;
+    margin-left: 3px;
+    padding: 7px;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 10px;
+}
+
+#searchBar:focus {
+    background-color: #0b141c;
+    width: 200px;
+    cursor: inherit;
+}
+
+
+/*TABLE*/
+
+.tableFixHead {
+    margin-top: 55px;
+    overflow-y: auto;
+    height: auto;
+    max-height: 465px;
+    margin-bottom: 14px;
+    width: 95%;
+    border-radius: 1em;
+}
+
+.tableFixHead thead tr th {
+    position: sticky;
+    top: 0;
+}
+
+table {
+    background: #0b141c;
+    border-collapse: collapse;
+    border-radius: 1em;
+    width: 100%;
+}
+
+th {
+    background: #0b141c;
+    border-bottom: 3px solid #192636;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 1em 1em;
+    text-align: left;
+}
+
+td {
+    border-bottom: 3px solid #192636;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.65em 1em;
+}
+
+.disabled td {
+    color: #4F5F64;
+}
+
+.td-icon {
+    margin: -.05263rem .42105rem -.05263rem 0;
+}
+
+tbody tr {
+    transition: background 0.25s ease;
+}
+
+tbody tr:hover {
+    background: #192636;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.name {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    /* margin-left:15px; */
+}
+
+.change-up {
+    color: #51f9a4;
+    /* kar */
+}
+
+.change-down {
+    color: #f97070;
+    /*zarar*/
+}
+
+.number {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button {
+    background: #192636;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a5169;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aac8e4;
+}
+
+::-webkit-scrollbar-track {
+    background: #192636;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background: #999;
+}
+
+::-webkit-resizer {
+    background: #192636;
+}
+
+
+/* Effect 1: Brackets */
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+
+/* blink effect */
+
+.blink-up {
+    animation: blinkingUp 2s 1;
+}
+
+.blink-down {
+    animation: blinkingDown 2s 1;
+}
+
+@keyframes blinkingUp {
+    0% {
+        background-color: #56c965;
+    }
+}
+
+@keyframes blinkingDown {
+    0% {
+        background-color: #ce290b;
+    }
+}
